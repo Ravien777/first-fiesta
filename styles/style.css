@@ -1,12 +1,81 @@
 @charset "UTF-8";
 
-body {
-  margin: 0;
-  font-family: sans-serif;
-  font-size: 16px;
+@font-face {
+  font-family: 'Coachella';
+  src: url('fonts/Coachella-Thin.otf') format('opentype');
+  src: url('fonts/Coachella-Thin.eot') format('embedded opentype');
+  src: url('fonts/Coachella-Thin.woff') format('woff');
+  src: url('fonts/Coachella-Thin.ttf') format('truetype');
+  font-weight: lighter;
+  font-style: normal;
 }
 
-.menu-1 {
-  background-color: red;
-  border: solid black 2px;
+@font-face {
+  font-family: 'Coachella';
+  src: url('fonts/Coachella-Light.otf') format('opentype');
+  src: url('fonts/Coachella-Light.eot') format('embedded opentype');
+  src: url('fonts/Coachella-Light.woff') format('woff');
+  src: url('fonts/Coachella-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Coachella';
+  src: url('fonts/Coachella-Regular.otf') format('opentype');
+  src: url('fonts/Coachella-Regular.eot') format('embedded opentype');
+  src: url('fonts/Coachella-Regular.woff') format('woff');
+  src: url('fonts/Coachella-Regular.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Coachella';
+  src: url('fonts/Coachella-Medium.otf') format('opentype');
+  src: url('fonts/Coachella-Medium.eot') format('embedded opentype');
+  src: url('fonts/Coachella-Medium.woff') format('woff');
+  src: url('fonts/Coachella-Medium.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Coachella';
+  src: url('fonts/Coachella-Bold.otf') format('opentype');
+  src: url('fonts/Coachella-Bold.eot') format('embedded opentype');
+  src: url('fonts/Coachella-Bold.woff') format('woff');
+  src: url('fonts/Coachella-Bold.ttf') format('truetype');
+  font-weight: bolder;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Coachella';
+  src: url('fonts/Coachella-Black.otf') format('opentype');
+  src: url('fonts/Coachella-Black.eot') format('embedded opentype');
+  src: url('fonts/Coachella-Black.woff') format('woff');
+  src: url('fonts/Coachella-Black.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TequilaSunset';
+  src: url('fonts/TequilaSunset/TequilaSunset.otf') format('opentype');
+  src: url('fonts/TequilaSunset/TequilaSunset.eot') format('embedded opentype');
+  src: url('fonts/TequilaSunset/TequilaSunset.woff') format('woff');
+  src: url('fonts/TequilaSunset/TequilaSunset.ttf') format('truetype');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Coachella, TequilaSunset;
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 16px;
 }
