@@ -6,7 +6,7 @@
   src: url('fonts/Coachella-Thin.eot') format('embedded opentype');
   src: url('fonts/Coachella-Thin.woff') format('woff');
   src: url('fonts/Coachella-Thin.ttf') format('truetype');
-  font-weight: lighter;
+  font-weight: 100;
   font-style: normal;
 }
 
@@ -16,7 +16,7 @@
   src: url('fonts/Coachella-Light.eot') format('embedded opentype');
   src: url('fonts/Coachella-Light.woff') format('woff');
   src: url('fonts/Coachella-Light.ttf') format('truetype');
-  font-weight: normal;
+  font-weight: 200;
   font-style: normal;
 }
 
@@ -26,7 +26,7 @@
   src: url('fonts/Coachella-Regular.eot') format('embedded opentype');
   src: url('fonts/Coachella-Regular.woff') format('woff');
   src: url('fonts/Coachella-Regular.ttf') format('truetype');
-  font-weight: 500;
+  font-weight: 300;
   font-style: normal;
 }
 
@@ -36,7 +36,7 @@
   src: url('fonts/Coachella-Medium.eot') format('embedded opentype');
   src: url('fonts/Coachella-Medium.woff') format('woff');
   src: url('fonts/Coachella-Medium.ttf') format('truetype');
-  font-weight: bold;
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -46,7 +46,7 @@
   src: url('fonts/Coachella-Bold.eot') format('embedded opentype');
   src: url('fonts/Coachella-Bold.woff') format('woff');
   src: url('fonts/Coachella-Bold.ttf') format('truetype');
-  font-weight: bolder;
+  font-weight: 700;
   font-style: normal;
 }
 
@@ -56,7 +56,7 @@
   src: url('fonts/Coachella-Black.eot') format('embedded opentype');
   src: url('fonts/Coachella-Black.woff') format('woff');
   src: url('fonts/Coachella-Black.ttf') format('truetype');
-  font-weight: 800;
+  font-weight: 900;
   font-style: normal;
 }
 
@@ -76,6 +76,6 @@
 body {
   font-family: Coachella, TequilaSunset;
   font-style: normal;
-  font-weight: lighter;
+  font-weight: 200;
   font-size: 16px;
 }
