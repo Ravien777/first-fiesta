@@ -2,45 +2,47 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>First Fiesta</title>
     <script src="scripts/script.js" charset="utf-8"></script>
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
   </head>
   <body>
     <div class="page">
-      <header>
-        <div class="desktop-menu">
-          <div class="menu">
-            <div class="logo-div">
-              <img src="img\webp\logo-first-fiesta1.webp" alt="logo">
-            </div>
-            <div class="nav-div">
-              <nav>
-                <ul>
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">Shop</a></li>
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Contact</a></li>
-                </ul>
-              </nav>
-            </div>
-            <div class="menu-right-side">
-                <form class="search-form1" action="index.html" method="get">
-                  <input type="text" name="search" placeholder="search" value="">
-                  <button type="submit"><i class="fa fa-search"></i></button>
-                </form>
-            </div>
+      <header role="banner">
+        <nav class="top-nav" role="navigation">
+          <div class="logo">
+            <object type="image/svg+xml" data="img\svg\logo1-ff-opt.svg" class="logo-img">
+              <img src="img\png\logo-first-fiesta1.png" alt="logo" class="logo-img">
+              <img src="img\webp\logo-first-fiesta1.webp" alt="logo" class="logo-img">
+              <img src="img\jpeg\logo-first-fiesta1.jpg" alt="logo" class="logo-img">
+            </object>
           </div>
-        </div>
-        <div class="mobile-menu">
-
-        </div>
+          <input type="checkbox" id="check">
+          <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+            <i class="fa-solid fa-xmark"></i>
+          </label>
+          <div class="nav-links">
+            <ul class="nav__menu" id="menu"  tabindex="-1" aria-label="main navigation">
+              <li class="nav__item"><a href="#" class="nav__link">Become A Supplier</a></li>
+              <li class="nav__item"><a href="#" class="nav__link">Create Party</a></li>
+              <li class="nav__item"><a href="#" class="nav__link">Explore</a></li>
+              <li class="nav__item"><a href="#" class="nav__link">Log In</a></li>
+            </ul>
+          </div>
+        </nav>
       </header>
-      <div class="content">
-        <p>Helloooo!</p>
-        <input type="radio" name="age" value="20">
-      </div>
+      <main class="content">
+        <section class="slideshow">
+          <img src="img\jpeg\home\samantha-gades-fIHozNWfcvs-unsplash.jpg" alt="People dancing at a party">
+          <img src="img\jpeg\home\pablo-heimplatz-ZODcBkEohk8-unsplash.jpg" alt="People celebrating at an event">
+          <img src="img\jpeg\home\birthday-2338813_1920.jpg" alt="DJ with his tools at a party">
+          <img src="img\jpeg\home\danny-howe-bn-D2bCvpik-unsplash.jpg" alt="An event where decorations are falling on people">
+          <img src="img\jpeg\home\marcela-laskoski-YrtFlrLo2DQ-unsplash.jpg" alt="Birthday cake">
+        </section>
+      </main>
       <footer>
 
       </footer>

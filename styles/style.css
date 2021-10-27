@@ -68,6 +68,10 @@
   src: url('fonts/TequilaSunset/TequilaSunset.ttf') format('truetype');
 }
 
+:root {
+  --color-gold: #d4af37;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -76,6 +80,153 @@
 body {
   font-family: Coachella, TequilaSunset;
   font-style: normal;
-  font-weight: 200;
-  font-size: 16px;
+  font-weight: 100;
+  font-size: 17px;
+}
+
+.page {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+header {
+  width: 100%;
+  height: auto;
+}
+
+.top-nav {
+  width: 100%;
+  position: sticky;
+  padding: 20px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 3px solid black;
+}
+
+.logo {
+  flex-basis: 20%;
+  padding-left: inherit;
+}
+
+.logo-img {
+  width: 3em;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+  padding-right: 2em;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.nav-links ul li a {
+  text-decoration: none;
+  color: #000000;
+  padding: 5px;
+  text-transform: capitalize;
+}
+
+.nav-links ul li a:hover {
+  color: var(--color-gold);
+  transition: 0.4s;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: black;
+  float: right;
+  margin-right: 0.5em;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+.nav__link {
+  border: none;
+  background-image: linear-gradient(var(--color-gold), var(--color-gold));
+  background-position: right -100% bottom 0;
+  background-size: 200% 2px;
+  background-repeat: no-repeat;
+  margin: 0 5px 0 5px;
+}
+
+.nav__link:hover {
+  color: var(--color-gold);
+  background-color: transparent;
+  background-position: left 100% bottom 0;
+  transition: background-position 0.5s;
+}
+
+@media screen and (max-width: 700px) {
+  .checkbtn {
+    display: block;
+    z-index: 11;
+    padding-right: 1.2em;
+  }
+  .fa-solid.fa-xmark {
+    display: none;
+  }
+  #menu {
+    width: 100%;
+    height: 100vh;
+    text-align: left;
+    padding-left: 1em;
+    transition: all .5s;
+    display: flex;
+    flex-direction: column;
+    line-height: 3em;
+    margin-top: 35%;
+  }
+  .nav-links {
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: #000000;
+    opacity: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-105%);
+    transition: all .4s ease-out;
+  }
+  .nav-links ul li a {
+    color: white;
+  }
+  .nav__item a {
+    font-size: 20px;
+  }
+  label i {
+    font-size: 1em;
+  }
+  #check:checked ~ .nav-links {
+    transform: translateX(-5%);
+    background-color: #000000;
+    opacity: 1;
+  }
+  #check:checked ~ .checkbtn .fa-solid.fa-xmark {
+    display: block;
+    color: white;
+    z-index: 12;
+  }
+  #check:checked ~ .checkbtn .fas.fa-bars {
+    display: none;
+  }
+}
+
+main {
+  background-size: cover;
+  height: calc(100vh - 80px);
 }
